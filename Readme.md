@@ -2,7 +2,6 @@
 
 * Студент: [Anna Zerova](https://up.htmlacademy.ru/htmlcss/26/user/1019657).
 * Наставник: [Анастасия Константинович] (https://htmlacademy.ru/profile/id153552).
----
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
 _`.editorconfig`, `.gitattributes`, `.gitignore`, `Contributing.md`, `Readme.md`._
