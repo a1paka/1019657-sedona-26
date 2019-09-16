@@ -14,7 +14,7 @@
                 <li><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
-        <img src="img/logo-sedona.svg" width="140px" height="72px" alt="Лого">
+        <img src="img/logo-sedona.svg" width="140" height="72" alt="Лого">
       </header>
 
         <main>
@@ -78,9 +78,33 @@
             </div>
             <p>
               Websyte by
-              <img src="img/logo-htmlacademy.svg" width="115px" height="41px" alt="html_academy">
+              <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy">
             </p>
       </footer>
+
+      <input type="button" value="Поиск гостиницы в седоне">
+      <form class="Search" action="#" method="post">
+          <label for="Search-dates-in"> Дата заезда
+          <input id="Search-dates-in" type="text" name="dateIn" placeholder="24 Апреля 2017"><img src="img/calendar.svg" alt="Календарь">
+          </label>
+          <br>
+          <label for="Search-dates-out"> Дата выезда
+          <input id="Search-dates-out" type="text" name="dateOut" placeholder="4 Июля 2017"><img src="img/calendar.svg" alt="Календарь">
+          </label>
+          <br>
+          <p>Взрослые</p>
+          <div class="number">
+              <span class="minus">-</span>
+              <input type="text" value="2" size="5"/>
+              <span class="plus">+</span>
+          <p>Дети</p>
+              <span class="minus">-</span>
+              <input type="text" value="0" size="5"/>
+              <span class="plus">+</span>
+          </div>
+          <button type="submit" class="Search">Найти</button>
+
+      </form>
 
   </body>
 </html>
