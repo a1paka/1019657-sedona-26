@@ -18,43 +18,33 @@
         </header>
         
     <main>
+      <form class="filter">
         <fieldset>
           <legend>Инфраструктура</legend>
-          <ul>
-          <li class="filter">
             <input type="checkbox" name="pool" id = "filter-pool" checked>
             <label for="filter-pool"> Бассейн </label>
-          </li>
-          <li  class="filter">
+      
             <input type="checkbox" name="parking" id = "filter-parking">
             <label for="filter-parking"> Парковка </label>
-          </li>
-          <li  class="filter">
+     
             <input type="checkbox" name="wifi" id = "filter-wifi">
             <label for="filter-wifi"> Wi-Fi </label>
-          </li>
-          </ul>
+   
         </fieldset>
-        
+     
         <fieldset>
             <legend>Тип жилья</legend>
-            <ul>
-            <li  class="filter">
+         
               <input type="checkbox" name="hotel" id = "filter-hotel" checked>
               <label for="filter-hotel"> Гостиница </label>
-            </li>
-            <li  class="filter">
+       
               <input type="checkbox" name="motel" id = "filter-motel" checked>
               <label for="filter-motel"> Мотель </label>
-            </li>
-            <li  class="filter">
+     
               <input type="checkbox" name="apartments" id = "filter-apartments" checked>
               <label for="filter-apartments"> Апартаменты </label>
-            </li>
-            </ul>
           </fieldset>
 
-       
         <h2>Стоимость в сутки (р):</h2>
         <form class="Search" action="#" method="POST">
           <p class="Price">
@@ -72,8 +62,8 @@
             <img src="img/filter-button.svg" alt="Ручка2">
           </span>
         </div>
-        <br>
         <button type="submit" class="filter-button">Показать</button>
+        </form>
 
         <section class="Result">
             <h3>Найдено</h3>

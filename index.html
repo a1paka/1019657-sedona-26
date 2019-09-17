@@ -82,25 +82,21 @@
             </p>
       </footer>
 
-      <input type="button" value="Поиск гостиницы в седоне">
+      <button>Поиск гостиницы в седоне</button>
       <form class="Search" action="#" method="post">
           <label for="Search-dates-in"> Дата заезда
-          <input id="Search-dates-in" type="text" name="dateIn" placeholder="24 Апреля 2017"><img src="img/calendar.svg" alt="Календарь">
+          <input id="Search-dates-in" type="date" name="dateIn" placeholder="24 Апреля 2017"><img src="img/calendar.svg" alt="Календарь">
           </label>
-          <br>
+
           <label for="Search-dates-out"> Дата выезда
-          <input id="Search-dates-out" type="text" name="dateOut" placeholder="4 Июля 2017"><img src="img/calendar.svg" alt="Календарь">
+          <input id="Search-dates-out" type="date" name="dateOut" placeholder="4 Июля 2017"><img src="img/calendar.svg" alt="Календарь">
           </label>
-          <br>
+
           <p>Взрослые</p>
           <div class="number">
-              <span class="minus">-</span>
-              <input type="text" value="2" size="5"/>
-              <span class="plus">+</span>
+              <input type="number" value="2" size="5"/>
           <p>Дети</p>
-              <span class="minus">-</span>
-              <input type="text" value="0" size="5"/>
-              <span class="plus">+</span>
+              <input type="number" value="0" size="5"/>
           </div>
           <button type="submit" class="Search">Найти</button>
 
