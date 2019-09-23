@@ -1,0 +1,62 @@
+body {
+    margin: 10;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+    text-transform: uppercase;
+    
+    background-color: #f2f2f2;
+}
+.bg {
+    background: url("/img/background_photo.jpg") no-repeat center;
+}
+.site-navigation a {
+    font-weight: bold;
+    color: black;
+}
+.site-navigation {
+    list-style: none;
+}
+.info {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.reasons {
+    font-size: 14px;
+    text-align: center;
+}
+.interest {
+    font-size: 30px;
+    text-align: center;
+}
+.SearchHotel {
+    text-align: center;
+}
+article.white {
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+article.black {
+    
+    font-size: 14px;
+    color: black;
+    text-align: center;
+}
+.visit {
+    font-size: 20px;
+    font-weight: bold;
+}
+.social-button {
+    list-style: none;
+}
+.button {
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+    font-weight: bold;
+}
