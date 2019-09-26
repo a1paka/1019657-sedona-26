@@ -21,8 +21,8 @@
         
     <main>
       <form class="filter">
-        <fieldset>
-          <legend>Инфраструктура</legend>
+        <fieldset class="filter-item">
+          <legend class="filter-search">нфраструктура</legend>
             <input type="checkbox" name="pool" id = "filter-pool" checked>
             <label for="filter-pool"> Бассейн </label>
       
@@ -34,8 +34,8 @@
    
         </fieldset>
      
-        <fieldset>
-            <legend>Тип жилья</legend>
+        <fieldset class="filter-item">
+            <legend class="filter-search">Тип жилья</legend>
          
               <input type="checkbox" name="hotel" id = "filter-hotel" checked>
               <label for="filter-hotel"> Гостиница </label>
@@ -47,16 +47,14 @@
               <label for="filter-apartments"> Апартаменты </label>
           </fieldset>
 
-        <h2>Стоимость в сутки (р):</h2>
+        <h2 class="filter-search">Стоимость в сутки (р):</h2>
         <form class="search" action="#" method="POST">
-          <p class="price">
+          <p>
             <label  for="price-from"></label>
-            <input id="price-from" type="text" name="pricefrom" placeholder="От 0">
+            <input class="price" id="price-from" type="text" name="pricefrom" placeholder="От 0">
             <label  for="price-to"></label>
-            <input id="price-to" type="text" name="priceto" placeholder="До 3000">
+            <input class="price" id="price-to" type="text" name="priceto" placeholder="До 3000">
           </p>
-        </form>
-
         <!--Потом прикрутим css-->
         <div class="price">
           <span>
@@ -65,13 +63,16 @@
           </span>
         </div>
         <button type="submit" class="filter-button">Показать</button>
+      </form>
 
         <section class="result">
-            <h3>Найдено</h3>
-            <p>Сортировка:</p>
-            <article>По цене</article>
-            <article>По типу</article>
-            <article>По рейтингу</article>
+            <h3 class="search-result">Найдено: 3</h3>
+            <p class="sorting">Сортировка:</p>
+              <article class="sorting-type">
+                <a class="sorting-item sorting-item-current" href="#">По цене</a>
+                <a class="sorting-item" href="#">По типу</a>
+                <a class="sorting-item" href="#">По рейтингу</a>
+              </article>
         </section>
 
         <section class = "hotels">
