@@ -1,4 +1,7 @@
 body {
+    min-width: 1280px;
+    min-height: 2762px;
+
     margin: 0;
     padding: 0;
 
@@ -9,6 +12,18 @@ body {
     text-transform: uppercase;
     background-color: #f2f2f2;
 }
+.inner-page-index {
+   /* для разметки */
+  /* background-image: url("/img/sedona-index.jpg");*/
+   background-position: top center;
+   background-repeat: no-repeat;
+}
+.inner-page-catalog {
+    /* для разметки */
+    /*background-image: url("/img/sedona-hotels.jpg");*/
+    background-position: top center;
+    background-repeat: no-repeat;
+}
 h2 {
     line-height: 1.2;
     color: black;
@@ -16,6 +31,28 @@ h2 {
 .bg {
     background: url("/img/background_photo.jpg") no-repeat center;
 }
+.main-logo {
+    display: block;
+    width: 459px;
+    height: 353px;
+}
+.navigation {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-between;
+}
+.navigation-wrapper {
+    width: 100%;
+    margin-bottom: 76px;
+    
+    min-height: 56px;
+    /* background-color: white;*/
+}
+.main-header {
+    margin-bottom: 76px;
+}
+
 .site-navigation a,
 .site-navigation {
     font-weight: bold;
@@ -36,7 +73,11 @@ h2 {
     font-weight: bold;
     text-align: center;
 }
-.reasons {
+.reasons-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     line-height: 1.5;
     text-align: center;
 }
@@ -49,14 +90,28 @@ h2 {
     line-height: 1.7;
     text-align: center;
 }
-article.white {
+.reasons-list-white {
+    margin: auto;
+    width: 456px;
+    height: 256px;
     color: white;
     text-align: center;
+    background-color: #81b3d2;
 }
-article.black {
+.reasons-list-black {
+    margin: auto;
     color: black;
     text-align: center;
 }
+.reasons-list-gray {
+    margin: auto;
+    color: black;
+    text-align: center;
+    width: 456px;
+    height: 256px;
+    background-color: #eeeeee;
+}
+
 .visit {
     font-weight: bold;
     color: black;
@@ -120,4 +175,12 @@ article.black {
     color: #81b3d2; 
     text-decoration: none;
     line-height: 1.5
+}
+.main-footer .container {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: white;
+    width: 1200px;
+    height: 120px;
 }
