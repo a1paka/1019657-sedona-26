@@ -10,15 +10,15 @@
   <body class="inner-page">
     <div class="page-wrapper">
 
-      <div class="header-logo">
-          <img src="../img/logo-sedona.svg" width="140" height="72" alt="Лого">
-      </div>
-
-      <header>
+      <header class="position">
+          <div class="header-logo">
+              <img src="img/logo-sedona.svg" width="140" height="72" alt="Лого">
+          </div>
         <nav class="main-navigation">
             <ul class="site-navigation">
               <li class="site-navigation"><a href="#">Информация</a></li>
               <li class="site-navigation"><a href="#">Фото и видео</a></li>
+              <li class="white-block"></li>
               <li class="site-navigation"><a href="#">Карта штата</a></li>
               <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
             </ul>
@@ -26,38 +26,38 @@
       </header>
 
       <main>
-
+         
         <section class="bg">
-          <img class="main-logo" src="../img/welcome.png"   alt="Sedona">
-          <img src="../img/polygon.png">
+          <img class="main-logo" src="img/welcome.png"  alt="Sedona">
+          <img class="polygon" src="img/polygon.png">
         </section>
         <section class = "about">
-          <p class="info">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p class="">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="main-info">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p >Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
         <div class="block-1">
-          <section class = "reasons-list">
             <article class="reasons-list-white-sedona">
               <h3>Настоящий городок</h3>
               <p>— №1 —</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </article>
+              <div class="reasons-picture-house"></div>
           </div>
 
           <div class="block-2">
             <article class="reasons-list-black">
-              <img src="../img/icon-1.svg" alt ="Домик">
+              <img src="img/icon-1.svg" alt ="Домик">
               <h3 class="info">Жильё</h3>
               <p class="leaving">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </article>
             <article class="reasons-list-black">
-                <img src="../img/icon-3.svg" alt ="Бургер">
+                <img src="img/icon-3.svg" alt ="Бургер">
                 <h3 class="info">Еда</h3>
                 <p class="food">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
             </article>
             <article class="reasons-list-black">
-                <img src="../img/icon-2.svg" alt ="Подарок">
+                <img src="img/icon-2.svg" alt ="Подарок">
                 <h3 class="info">Сувениры</h3>
                 <p class="presents">Не только китайского, но и местного производства!</p>
             </article>
@@ -69,6 +69,7 @@
                 <p>— №2 —</p>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </article>
+            <div class="reasons-picture-bridge"></div>
             </div>
 
             <div class="block-4">
@@ -94,6 +95,7 @@
           <h2 class="interest">Заинтересовались?</h2>
           <p class="search-hotel"> Укажите предполагаемые даты поездки,
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <div class="map"></div>
           </div>
       </main>
 
@@ -104,14 +106,14 @@
             </div>
             <div class="footer-social">
                 <ul class="social-button">
-                  <li class="social-button-tw"><img src="../img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
-                  <li class="social-button-fb"><img src="../img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></li>
-                  <li class="social-button-yut"><img src="../img/youtube.svg" width="20" height="16" alt="Youtube"></li>
+                  <li class="social-button-tw"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
+                  <li class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></li>
+                  <li class="social-button-yut"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></li>
                 </ul>
             </div>
             <div class="site-by">
                 <p class="site-by"> Websyte by </p>
-                <img src="../img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy">
             </div>
           </div>
       </footer>
@@ -119,11 +121,11 @@
       <button>Поиск гостиницы в седоне</button>
       <form class="search" action="#" method="post">
           <label for="search-dates-in"> Дата заезда
-          <input id="search-dates-in" type="date" name="date-in" placeholder="24 Апреля 2017"><img src="../img/calendar.svg" alt="Календарь">
+          <input id="search-dates-in" type="date" name="date-in" placeholder="24 Апреля 2017"><img src="img/calendar.svg" alt="Календарь">
           </label>
 
           <label for="search-dates-out"> Дата выезда
-          <input id="search-dates-out" type="date" name="date-out" placeholder="4 Июля 2017"><img src="../img/calendar.svg" alt="Календарь">
+          <input id="search-dates-out" type="date" name="date-out" placeholder="4 Июля 2017"><img src="img/calendar.svg" alt="Календарь">
           </label>
 
           <p>Взрослые</p>

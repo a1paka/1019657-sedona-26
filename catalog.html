@@ -7,22 +7,27 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="inner-page-catalog">
-      <header class="main-header">
-        <nav class="navigation">
-            <ul>
-              <li class="site-navigation"><a href="#">Информация</a></li>
-              <li class="site-navigation"><a href="#">Фото и видео</a></li>
-              <li class="site-navigation"><a href="#">Карта штата</a></li>
-              <li class="site-navigation current"><a  href="catalog.html">Гостиницы</a></li>
-            </ul>
-        </nav>   
-        <a href = "index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Лого"></a>
+      <div class="page-wrapper">
+  
+        <header class="position">
+            <div class="header-logo">
+                <a href = "index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Лого"></a>
+            </div>
+          <nav class="main-navigation">
+              <ul class="site-navigation">
+                <li class="site-navigation"><a href="#">Информация</a></li>
+                <li class="site-navigation"><a href="#">Фото и видео</a></li>
+                <li class="white-block"></li>
+                <li class="site-navigation"><a href="#">Карта штата</a></li>
+                <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
+              </ul>
+          </nav>
         </header>
         
     <main>
       <form class="filter">
         <fieldset class="filter-item">
-          <legend class="filter-search">нфраструктура</legend>
+          <legend class="filter-search">Инфраструктура</legend>
             <input type="checkbox" name="pool" id = "filter-pool" checked>
             <label for="filter-pool"> Бассейн </label>
       
@@ -47,22 +52,21 @@
               <label for="filter-apartments"> Апартаменты </label>
           </fieldset>
 
-        <h2 class="filter-search">Стоимость в сутки (р):</h2>
-        <form class="search" action="#" method="POST">
-          <p>
-            <label  for="price-from"></label>
-            <input class="price" id="price-from" type="text" name="pricefrom" placeholder="От 0">
-            <label  for="price-to"></label>
-            <input class="price" id="price-to" type="text" name="priceto" placeholder="До 3000">
-          </p>
-        <!--Потом прикрутим css-->
-        <div class="price">
-          <span>
-            <img src="img/filter-button.svg" alt="Ручка1">
-            <img src="img/filter-button.svg" alt="Ручка2">
-          </span>
-        </div>
-        <button type="submit" class="filter-button">Показать</button>
+          <div class="filter-range">
+              <div class="filter-range-title">Стоимость в сутки (р):</div>
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
+              <button class="btn-transparent" type="submit">Показать</button>
+            </div>
       </form>
 
         <section class="result">
@@ -75,60 +79,82 @@
               </article>
         </section>
 
-        <section class = "hotels">
+      
             <article class="amara">
-                <img src="img/hotel1.png" width="135" height="90" alt="amara_resort">
+                <img class="amara-pic" src="img/hotel1.png" width="135" height="90" alt="amara_resort">
+              <div class="main-table">
                 <h2>Amara resort&spa</h2>
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Гостиница</p>
                 <p>от 4000р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="booking" href="#">Забронировать</a>
+              </div>
+              <div class="stars">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Рейтинг: 8,5</p>
+              </div>
             </article>
+
+
             <article class="desert">
-                <img src="img/hotel2.png" width="135" height="90" alt="desert">
+                <img class="desert-pic" src="img/hotel2.png" width="135" height="90" alt="desert">
+              <div class="main-table">
                 <h2>Desert qual inn</h2>
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Мотель</p>
                 <p>от 3000р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="booking" href="#">Забронировать</a>
+              </div>
+              <div class="stars">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                  <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Рейтинг: 8,9</p>
+                </div>
             </article>
+
+
              <article class="poco">
-                <img src="img/hotel3.png" width="135" height="90" alt="villas">
+
+                <img class="poco-pic" src="img/hotel3.png" width="135" height="90" alt="villas">
+              <div class="main-table">
                 <h2>Willasat poco diablo</h2>
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
-                <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Апартаменты</p>
                 <p>от 4200р.</p>
-                <a class="button" href="#">Подробнее</a>
-                <a class="button" href="#">Забронировать</a>
+                  <a class="more" href="#">Подробнее</a>
+                  <a class="booking" href="#">Забронировать</a>
+              </div>
+              <div class="stars"></div>
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
+                <img src="img/star.svg" width="18" height="17" alt="Звезда">
                 <p>Рейтинг: 9,2</p>
               </article>
-            </section>        
+            </div>
+            </section>    
+ 
     </main>
 
-  <footer>
-            <div>
-              <p class="visit">#Visitsedona</p>
-              <ul>
-                <li class="social-button"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
-                <li class="social-button"><img src="img/fb-icon.svg" width="17" height="15" alt="Фейсбук"></li>
-                <li class="social-button"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></li>
+    <footer class="main-footer">
+        <div class="container">
+          <div class="footer-hashtag">
+            <p class="visit">#Visitsedona</p>
+          </div>
+          <div class="footer-social">
+              <ul class="social-button">
+                <li class="social-button-tw"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
+                <li class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></li>
+                <li class="social-button-yut"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></li>
               </ul>
-            </div>
-            <p>
-              Websyte by
+          </div>
+          <div class="site-by">
+              <p class="site-by"> Websyte by </p>
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy">
-            </p>
-      </footer>
+          </div>
+    </footer>
+
  </body>
 </html>
 
