@@ -9,47 +9,67 @@
   <body class="inner-page-catalog">
       <div class="page-wrapper">
   
-        <header class="position">
+        <header >
             <div class="header-logo">
                 <a href = "index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Лого"></a>
             </div>
           <nav class="main-navigation">
               <ul class="site-navigation">
-                <li class="site-navigation"><a href="#">Информация</a></li>
-                <li class="site-navigation"><a href="#">Фото и видео</a></li>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
                 <li class="white-block"></li>
-                <li class="site-navigation"><a href="#">Карта штата</a></li>
-                <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li class="site-navigation current"><a href="catalog.html">Гостиницы</a></li>
               </ul>
           </nav>
         </header>
         
     <main>
-      <form class="filter">
-        <fieldset class="filter-item">
-          <legend class="filter-search">Инфраструктура</legend>
-            <input type="checkbox" name="pool" id = "filter-pool" checked>
+
+    <div class="catalog">
+      <section class="filters">
+
+      <form class="filter" method="get" action="#">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id = "filter-pool" checked>
+            </li>
             <label for="filter-pool"> Бассейн </label>
       
-            <input type="checkbox" name="parking" id = "filter-parking">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id = "filter-parking">
+            </li>
             <label for="filter-parking"> Парковка </label>
      
-            <input type="checkbox" name="wifi" id = "filter-wifi">
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id = "filter-wifi">
+            </li>
             <label for="filter-wifi"> Wi-Fi </label>
-   
+          </ul>  
         </fieldset>
+
      
-        <fieldset class="filter-item">
-            <legend class="filter-search">Тип жилья</legend>
+        <fieldset>
+            <legend >Тип жилья:</legend>
          
-              <input type="checkbox" name="hotel" id = "filter-hotel" checked>
+            <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id = "filter-hotel" checked>
+            </li>
               <label for="filter-hotel"> Гостиница </label>
        
-              <input type="checkbox" name="motel" id = "filter-motel" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id = "filter-motel" checked>
+              </li>
               <label for="filter-motel"> Мотель </label>
      
-              <input type="checkbox" name="apartments" id = "filter-apartments" checked>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id = "filter-apartments" checked> 
+              </li>
               <label for="filter-apartments"> Апартаменты </label>
+            </ul>
           </fieldset>
 
           <div class="filter-range">
@@ -67,6 +87,8 @@
               </div>
               <button class="btn-transparent" type="submit">Показать</button>
             </div>
+          </section>
+          </div>
       </form>
 
         <section class="result">
@@ -77,6 +99,8 @@
                 <a class="sorting-item" href="#">По типу</a>
                 <a class="sorting-item" href="#">По рейтингу</a>
               </article>
+              <img src="img/icon-up-dir.svg">
+              <img src="img/icon-down-dir.svg">
         </section>
 
       
@@ -142,12 +166,10 @@
           <div class="footer-hashtag">
             <p class="visit">#Visitsedona</p>
           </div>
-          <div class="footer-social">
-              <ul class="social-button">
-                <li class="social-button-tw"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
-                <li class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></li>
-                <li class="social-button-yut"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></li>
-              </ul>
+          <div class="social">
+            <a class="social-tw" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a>
+            <a class="social-fb" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+            <a class="social-yut" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
           </div>
           <div class="site-by">
               <p class="site-by"> Websyte by </p>
