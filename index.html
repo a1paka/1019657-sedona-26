@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Главная</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -10,7 +10,8 @@
   <body class="inner-page">
     <div class="page-wrapper">
 
-      <header class="position">
+      <header>
+        <div class="position">
           <div class="header-logo">
               <img src="img/logo-sedona.svg" width="140" height="72" alt="Лого">
           </div>
@@ -18,45 +19,45 @@
             <ul class="site-navigation">
               <li class="site-navigation"><a href="#">Информация</a></li>
               <li class="site-navigation"><a href="#">Фото и видео</a></li>
-              <li class="white-block"></li>
               <li class="site-navigation"><a href="#">Карта штата</a></li>
               <li class="site-navigation"><a href="catalog.html">Гостиницы</a></li>
             </ul>
         </nav>
+        <section class="bg">
+          <img class="main-logo" src="img/welcome.png"  alt="Sedona">
+          <img class="polygon" src="img/polygon.png" alt="обрезка">
+        </section>
+      </div>
       </header>
 
       <main>
          
-        <section class="bg">
-          <img class="main-logo" src="img/welcome.png"  alt="Sedona">
-          <img class="polygon" src="img/polygon.png">
-        </section>
-        <section class = "about">
-          <p class="main-info">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-          <p >Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <section>
+          <p class="main-info">Седона -&nbsp; &nbsp;небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
 
         <div class="block-1">
             <article class="reasons-list-white-sedona">
-              <h3>Настоящий городок</h3>
+              <h3 class="head-white">Настоящий городок</h3>
               <p>— №1 —</p>
-              <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+              <p class="sedona">Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </article>
               <div class="reasons-picture-house"></div>
           </div>
 
           <div class="block-2">
-            <article class="reasons-list-black">
+            <article class="reasons-list-leaving">
               <img src="img/icon-1.svg" alt ="Домик">
               <h3 class="info">Жильё</h3>
               <p class="leaving">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </article>
-            <article class="reasons-list-black">
+            <article class="reasons-list-food">
                 <img src="img/icon-3.svg" alt ="Бургер">
                 <h3 class="info">Еда</h3>
                 <p class="food">Всегда заказывайте фирменный бургер, вы не разочаруетесь</p>
             </article>
-            <article class="reasons-list-black">
+            <article class="reasons-list-present">
                 <img src="img/icon-2.svg" alt ="Подарок">
                 <h3 class="info">Сувениры</h3>
                 <p class="presents">Не только китайского, но и местного производства!</p>
@@ -65,38 +66,70 @@
 
             <div class="block-3">
             <article class="reasons-list-white-bridge">
-                <h3>Там есть мост дьявола</h3>
+                <h3 class="head-bridge">Там есть мост дьявола</h3>
                 <p>— №2 —</p>
-                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                <p class="head-bridge-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </article>
             <div class="reasons-picture-bridge"></div>
             </div>
 
             <div class="block-4">
             <article class="reasons-list-gray">
-              <h3 class="info">небольшая площадь</h3>
+              <h3 class="info info-area">небольшая площадь</h3>
               <p>— №3 —</p>
-              <p>Все достопримечательности находятся очень близко</p>
+              <p class="reasons-list-gray-area">Все достопримечательности находятся очень близко</p>
             </article>
             <article class="reasons-list-gray">
-                <h3 class="info">Красивая дорога</h3>
+                <h3 class="info info-road">Красивая дорога</h3>
                 <p>—  №4 —</p>
-                <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                <p class="reasons-list-gray-road">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </article>
             <article class="reasons-list-gray">
-                <h3 class="info">Мало туристов</h3>
+                <h3 class="info info-tourist">Мало туристов</h3>
                 <p>— №5 —</p>
-                <p>Большинство едет в Гранд-Каньон и толпится там</p>
+                <p class="reasons-list-gray-tourist">Большинство едет в Гранд-Каньон и толпится там</p>
             </article>
             </div>
-          </section>
 
           <div class="main-interest">
-          <h2 class="interest">Заинтересовались?</h2>
-          <p class="search-hotel"> Укажите предполагаемые даты поездки,
-          и мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <div class="map"></div>
+            <h2 class="interest">Заинтересовались?</h2>
+            <p class="search-hotel"> Укажите предполагаемые даты поездки,<br>
+              и мы покажем вам лучшие предложения гостиниц в седоне</p>
           </div>
+          
+          <button class="search-hotels-sedona">Поиск гостиницы в седоне</button>
+
+          <div class="map"></div>
+
+          <div class="modal-window">
+              <form class="search" action="https://echo.htmlacademy.ru" method="post">
+                  <div class="dates">
+                    <label for="search-dates-in"> Дата заезда: </label>
+                      <input id="search-dates-in" class="checkin" type="text" name="date-in" placeholder="24 Апреля 2017">
+                      <!--<button class="calendar" type="button" aria-label="Выбрать дату заезда">
+                        <img src="img/calendar.svg"> -->
+                      </button>
+                    <label for="search-dates-out"> Дата выезда: </label>
+                      <input id="search-dates-out" class="checkout" type="text" name="date-out" placeholder="4 Июля 2017">
+                       <!--<button class="calendar" type="button" aria-label="Выбрать дату отьезда">
+                          <img src="img/calendar.svg">-->
+                    </div>
+
+                  <div class="people">
+                    <label for="adults"> Взрослые: </label>
+                    <button class="minus" type="button" aria-label="Уменьшить число взрослых"></button>
+                    <input id="adults" class="number-adilts" type="number" name="adults" value="2" />
+                    <button class="plus" type="button" aria-label="Увеличить число взрослых"></button>
+
+                    <label for="children"> Дети: </label>
+                    <button class="minus" type="button" aria-label="Уменьшить число детей"></button>
+                    <input id="children" class="number-children" type="number" name="children" value="0" />
+                    <button class="minus" type="button" aria-label="Увеличить число детей"></button>
+                  </div>
+                   <input class="search-button" type="submit" name="search-button" value="Найти"> 
+
+                </form>
+              </div>
       </main>
 
       <footer class="main-footer">
@@ -104,39 +137,28 @@
             <div class="footer-hashtag">
               <p class="visit">#Visitsedona</p>
             </div>
-            <div class="footer-social">
-                <ul class="social-button">
-                  <li class="social-button-tw"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></li>
-                  <li class="social-button-fb"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></li>
-                  <li class="social-button-yut"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></li>
-                </ul>
+            <div class="social">
+                <a class="social-tw" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a>
+                <a class="social-fb" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a>
+                <a class="social-yut" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Youtube"></a>
             </div>
             <div class="site-by">
                 <p class="site-by"> Websyte by </p>
-                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy">
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41" alt="html_academy"></a>
             </div>
           </div>
       </footer>
 
-      <button>Поиск гостиницы в седоне</button>
-      <form class="search" action="#" method="post">
-          <label for="search-dates-in"> Дата заезда
-          <input id="search-dates-in" type="date" name="date-in" placeholder="24 Апреля 2017"><img src="img/calendar.svg" alt="Календарь">
-          </label>
-
-          <label for="search-dates-out"> Дата выезда
-          <input id="search-dates-out" type="date" name="date-out" placeholder="4 Июля 2017"><img src="img/calendar.svg" alt="Календарь">
-          </label>
-
-          <p>Взрослые</p>
-          <div class="number">
-              <input type="number" value="2" size="5"/>
-          <p>Дети</p>
-              <input type="number" value="0" size="5"/>
-          </div>
-          <button type="submit" class="search">Найти</button>
-
-      </form>
   </div>
+ <script>
+    var link = document.querySelector(".search-hotels-sedona");
+    var popup = document.querySelector(".modal-window");
+
+   link.addEventListener("click", function (evt) {
+    evt.preventDefault(); 
+    popup.classList.toggle("modal-window-show");
+    });
+ </script>
+
   </body>
 </html>
