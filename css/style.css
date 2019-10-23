@@ -42,6 +42,7 @@ img {
 .position {
     position: relative;
     background-image: url("../img/background_photo.jpg");
+    background-color: #e0eef7;
     width: 1200px;
     height: 567px;
 }
@@ -115,10 +116,12 @@ nav li:nth-child(4) {
     list-style: none;
 
 }
+
 .site-navigation a:hover,
 .site-navigation a:focus {
     color:  #82b6d4;
 }
+
 .site-navigation a:active {
     color: #cbcbcb;
 }
@@ -141,6 +144,7 @@ nav li:nth-child(4) {
     margin-right: 380px;
     margin-bottom: 30px;
 }
+
 .main-info +p {
     letter-spacing: 0,004em;
     text-align: center;
@@ -257,11 +261,13 @@ nav li:nth-child(4) {
 
 .reasons-picture-house {
     background-image: url("../img/housemain.jpg");
+    background-color: #81b3d2;
     width: 800px;
 }
 
 .reasons-picture-bridge {
     background-image: url("../img/kanion.jpg");
+    background-color: #81b3d2;
     width: 800px;
 }
 
@@ -366,6 +372,7 @@ nav li:nth-child(4) {
     display: flex;
     flex-direction: row;
     background: url("../img/filter_background.jpg") no-repeat center;
+    background-color: #81b3d2;
     width: 1200px; 
 }
 
@@ -471,6 +478,7 @@ nav li:nth-child(4) {
   
 .price-controls label {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 38px;
     vertical-align: top;
@@ -592,13 +600,24 @@ nav li:nth-child(4) {
     margin-top: 36px;
 }
 
-.icons svg:hover path,
-.icons svg:focus path{
+.up:hover path,
+.up:focus path{
     fill: black;
     cursor: pointer;
 }
 
-.icons svg:active path {
+.up:active path {
+    fill: #81b5d1;
+    cursor: pointer;
+}
+
+.down:hover path,
+.down:focus path{
+    fill: black;
+    cursor: pointer;
+}
+
+.down:active path {
     fill: #81b5d1;
     cursor: pointer;
 }
@@ -635,6 +654,7 @@ nav li:nth-child(4) {
 
 .type-hotel {
     display: inline-block;
+    vertical-align: top;
     min-width: 116px;
     padding-top: 14px;
     padding-bottom: 12px;
@@ -698,6 +718,7 @@ nav li:nth-child(4) {
 
 .star {
     display: inline-block;
+    vertical-align: top;
     width: 17px;
     height: 17px;
     margin-left: 5px;
@@ -705,6 +726,7 @@ nav li:nth-child(4) {
     background-image: url("../img/star.svg");
     margin-top: 30px;
 }
+
 .icons {
     text-align: right;
     margin-right: 71px;
@@ -788,7 +810,7 @@ nav li:nth-child(4) {
 
 .modal-window {
     position: absolute;
-    top: 2099px;
+    top: 2098px;
     left: 50%;
     transform: translateX(-50%);   
     width: 568px;
@@ -803,6 +825,7 @@ nav li:nth-child(4) {
 
 .dates label {
     display: inline-block;
+    vertical-align: top;
     padding-top: 19px;
     padding-bottom: 9px;
     padding-left: 55px;
@@ -876,10 +899,6 @@ nav li:nth-child(4) {
 	border: none;
 }
 
-.calendar {
-    position: absolute;
-}
-
 .people-block {
     display: flex;
     flex-direction: row;
@@ -915,12 +934,35 @@ nav li:nth-child(4) {
 	cursor: pointer;
 }
 
+.plus:hover,
+.plus:focus {
+    background-color: #f2f3f3;
+    color: #000000;
+}
+
+.plus:active {
+    background-color: #f2f3f3;
+    color: #82b5d5;
+}
+
+.minus:hover,
+.minusfocus {
+    background-color: #f2f3f3;
+    color: #000000;
+}
+
+.minus:active {
+    background-color: #f2f3f3;
+    color: #82b5d5;
+}
+
 .number-adults,
 .number-children {
     width: 36px;
     height: 36px;
     background-color: #f2f2f2;
     border: none;  
+    text-align: center;
 }
 
 .children {
@@ -933,6 +975,7 @@ nav li:nth-child(4) {
 
 .search-button {
     display: inline-block;
+    vertical-align: top;
     font-size: 21px;
     font-weight: bold;
     margin-left: 55px;
@@ -942,9 +985,20 @@ nav li:nth-child(4) {
     color: #fff;
     background: #8dbad6;
     border: none;
-    outline: none;
     cursor: pointer;
     text-transform: uppercase;
+}
+
+.search-button:hover,
+.search-button:focus {
+    background-color: #669fc1;
+    color: white;
+    cursor: pointer;
+}
+
+.search-button:active {
+    background-color: #5497c0;
+    color:#97bad4;
 }
 
 .search-hotels-sedona:hover,
@@ -970,13 +1024,13 @@ nav li:nth-child(4) {
     border: 2px solid #ececec;
 }
 
-.dates svg:hover path,
-.dates svg:focus path{
+.calendar:hover path,
+.calendar:focus path{
     fill: #83b5d2;
     cursor: pointer;
 }
 
-.dates svg:active path {
+.calendar:active path {
     fill: black;
     cursor: pointer;
 }
@@ -1032,7 +1086,7 @@ nav li:nth-child(4) {
     cursor: pointer;
 }
 
-.social svg:active path {
+.social-tw:active path {
     fill: #89b8d1;
     cursor: pointer;
 }
@@ -1048,6 +1102,11 @@ nav li:nth-child(4) {
     color:#8ab9d2;
 }
 
+.social-fb:active path {
+    fill: #89b8d1;
+    cursor: pointer;
+}
+
 .social .social-yut:hover,
 .social .social-yut:focus {
     background-color: #669fc1;
@@ -1057,6 +1116,11 @@ nav li:nth-child(4) {
 .social .social-yut:active {
     background-color: #5497c0;
     color:#8ab9d2;
+}
+
+.social-yut:active path {
+    fill: #89b8d1;
+    cursor: pointer;
 }
 
 .site-by-pic {
@@ -1077,20 +1141,17 @@ nav li:nth-child(4) {
     height: 41px;
 }
 
-.academy svg:hover path,
-.academy svg:focus path{
+.academy:hover path,
+.academy:focus path {
     fill: #83b5d2;
     cursor: pointer;
 }
 
-.academy svg:active path {
+.academy:active path {
     fill: #bebdbe;
     cursor: pointer;
 }
 
-iframe {
-    opacity: 0.7;
-}
  /* Футер для главной */
 
 .container-index {
@@ -1106,6 +1167,7 @@ iframe {
 .footer-index {
     position: absolute;
     bottom: 0;
+    opacity: 0.9;
 }
 
 .social-index {
