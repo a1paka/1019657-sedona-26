@@ -5,10 +5,10 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet"> 
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
   <body class="inner-page-catalog">
       <div class="page-wrapper">
-  
         <header>
             <div class="header-logo">
                 <a href = "index.html"><img src="img/logo-sedona.svg" width="140" height="72" alt="Лого"></a>
@@ -27,6 +27,7 @@
 
     <div class="catalog">
       <section class="filters">
+        <h2 class="visually-hidden">Фильтры поиска гостиниц</h2>
 
       <form class="filter" method="get" action="#">
         <fieldset class="checkboxes-infrastr">
@@ -90,13 +91,14 @@
         
 
         <section class="result">
+            <h2 class="visually-hidden">Результаты поиска гостиниц</h2>
             <h3 class="search-result">Найдено: 3</h3>
             <p class="sorting">Сортировка:</p>
-              <article class="sorting-type">
+              <div class="sorting-type">
                 <a class="sorting-item sorting-item-current" href="#">По цене</a>
                 <a class="sorting-item" href="#">По типу</a>
                 <a class="sorting-item" href="#">По рейтингу</a>
-              </article>
+              </div>
               <div class="icons">
                 <a class="up" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cbcbcb" d="M5.5 0L0 10h11z"/></svg></a>
                 <a class="down" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#cbcbcb" d="M5.5 10L0 0h11"/></svg></a>
@@ -104,7 +106,8 @@
         </section>
       
             <article class="hotels">
-                <img class="amara-pic" src="img/hotel1.png" width="135" height="90" alt="amara_resort">
+                <h2 class="visually-hidden">Первая гостиница</h2>
+                <img class="hotel-pic" src="img/hotelmini1.jpg" width="135" height="90" alt="amara_resort">
               <div class="main-table">
                 <h2 class="hotel-name">Amara resort & spa</h2>
                   <div class="block-type">
@@ -129,9 +132,10 @@
             </article>
 
             <article class="hotels">
-                <img class="desert-pic" src="img/hotel2.png" width="135" height="90" alt="desert">
+                <h2 class="visually-hidden">Вторая гостиница</h2>
+                <img class="hotel-pic" src="img/hotelmini2.jpg" width="135" height="90" alt="desert">
               <div class="main-table">
-                <h2 class="hotel-name">Desert qual inn</h2>
+                <h2 class="hotel-name">Desert quail inn</h2>
                   <div class="block-type">
                     <span class="type-hotel">Мотель</span>
                     <span class="type-price">от 3000 р.</span>
@@ -152,11 +156,11 @@
               </div>
             </article>
 
-
              <article class="hotels">
-                <img class="poco-pic" src="img/hotel3.png" width="135" height="90" alt="villas">
+                <h2 class="visually-hidden">Третья гостиница</h2>
+                <img class="hotel-pic" src="img/hotelmini3.jpg" width="135" height="90" alt="villas">
               <div class="main-table">
-                <h2 class="hotel-name">Willas at poco diablo</h2>
+                <h2 class="hotel-name hotel-name-villas">Villas at  poco &nbsp;diablo</h2>
                   <div class="block-type">
                   <span class="type-hotel">Апартаменты</span>
                   <span class="type-price">от 2000 р.</span>
@@ -174,13 +178,10 @@
                 <span class="rating">Рейтинг: 9,2</span>
               </div>
               </article>
-
-            </div>
-            </section>    
- 
+            </div> 
     </main>
 
-    <footer class="main-footer">
+    <footer class="catalog-footer">
       <div class="container">
         <div class="footer-hashtag">
           <p class="visit">#Visitsedona</p>
@@ -196,7 +197,7 @@
         </div>
       </div>
   </footer>
-
+  </div>
  </body>
 </html>
 
