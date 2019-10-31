@@ -1,17 +1,12 @@
 body {
     position: relative;
-    min-width: 1280px;
-    font-family: "PT Sans", Arial, sans-serif;
+    min-width: 1200px;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 1.4;
     color: #333333;
     text-transform: uppercase;
     background-color: #f2f2f2;
-}
-
-h2 {
-    line-height: 1.2;
-    color: black;
 }
 
 img {
@@ -32,6 +27,13 @@ img {
     overflow: hidden;
 }
 
+.bg {
+    background-image: url("../img/polygon.png");
+    background-repeat: no-repeat;
+    background-position-y: 454.5px;
+    padding-bottom: 76px;
+}
+
 .page-wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -43,6 +45,7 @@ img {
     position: relative;
     background-image: url("../img/background_photo.jpg");
     background-color: #e0eef7;
+    background-position-y: -27px;
     width: 1200px;
     height: 567px;
 }
@@ -60,7 +63,7 @@ img {
     margin: 0 auto;
     width: 459px;
     height: 353px;
-    padding: 74px;
+    padding: 77px;
     padding-bottom: 21px;
 }
 
@@ -69,7 +72,7 @@ img {
 } 
 
 .main-navigation {
-   background: white; 
+       background: white; 
 }
 
 ul.site-navigation  {
@@ -95,17 +98,15 @@ li.site-navigation {
 
 nav li:nth-child(2) {
     text-align: left;
-    margin-right: 90px;
+    margin-right: 89px;
 }
 
 nav li:nth-child(3) {
     text-align: right;
-    letter-spacing: 0,018em;
 }
 
 nav li:nth-child(4) {
     text-align: right;
-    letter-spacing: normal;
 }
 
 .site-navigation a,
@@ -114,7 +115,6 @@ nav li:nth-child(4) {
     color: black;
     text-decoration: none;
     list-style: none;
-
 }
 
 .site-navigation a:hover,
@@ -135,20 +135,19 @@ nav li:nth-child(4) {
 
 .main-info {
     font-size: 21px;
-    line-height: 1.2;
+    line-height: 26px;
     font-weight: bold;
     color: #000000;
     text-align: center;
-    margin-top: 58px;
+    margin-top: 56px;
     margin-left: 380px;
     margin-right: 380px;
-    margin-bottom: 30px;
+    margin-bottom: 32px;
 }
 
 .main-info +p {
-    letter-spacing: 0,004em;
     text-align: center;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
 }
 
 .block-1 {
@@ -160,8 +159,7 @@ nav li:nth-child(4) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 2px;
-    padding-bottom: 25px;
+    padding-top: 56px;
 }
 
 .block-3 {
@@ -173,13 +171,15 @@ nav li:nth-child(4) {
     display: flex;
     flex-direction: row;
     background-color: #eeeeee;
+    padding-bottom: 4px;
 }
 
 .interest {
-    padding-top: 24px;
+    padding-top: 26px;
     font-size: 30px;
     text-align: center;
-    line-height: 1.5;
+    color: #000000;
+    line-height: 36px;
 }
 
 .main-interest {
@@ -189,15 +189,15 @@ nav li:nth-child(4) {
 
 .search-hotel {
     text-align: center;
-    line-height: 1.5;
-    margin-bottom: 50px;
+    margin-bottom: 46px;
+    line-height: 24px;
 }
 
 .head-white {
     font-size: 21px;
     line-height: 21px;
     width: 210px;
-    margin-top: -3px;
+    margin-top: -2px;
     margin-left: 35px;
 }
 
@@ -207,11 +207,12 @@ nav li:nth-child(4) {
 }
 
 .info {
+    color: #000000;
     font-size: 21px;
     line-height: 1.2;
     font-weight: bold;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 21px;
 }
 
 .leaving {
@@ -224,12 +225,10 @@ nav li:nth-child(4) {
     max-width: 290px;
     height: 79px;
     line-height: 21px;
-    letter-spacing: 0,005em;
-    margin-top: 23px;
 }
 
 .presents {
-    max-width: 273px;
+    max-width: 280px;
     height: 80px;
     line-height: 21px;
 }
@@ -238,12 +237,13 @@ nav li:nth-child(4) {
     font-size: 21px;
     line-height: 22px;
     width: 151px;
-    margin-top: -3px;
+    margin-top: -6px;
     margin-left: 77px;
+    margin-bottom: 25px;
 }
 
 .head-bridge-text {
-    margin-top: 25px;
+    margin-top: 22px;
 }
 
 .reasons-list-white-sedona {
@@ -251,9 +251,9 @@ nav li:nth-child(4) {
     text-align: center;
     background-color: #81b3d2;
     width: 280px;
-    height: 141px;
+    height: 140px;
     line-height: 26px;
-    padding-top: 48px;
+    padding-top: 49px;
     padding-left: 60px;
     padding-bottom: 67px;
     padding-right: 60px;
@@ -277,89 +277,102 @@ nav li:nth-child(4) {
     background-color: #81b3d2;
     width: 303px;
     height: 140px;
-    padding-top: 49px;
+    padding-top: 50px;
     padding-left: 48px;
     padding-bottom: 65px;
     padding-right: 49px;
 }
 
 .reasons-list-leaving {
-    color: black;
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 4px;
     text-align: center;
-    padding-top: 60px;
-    padding-left: 14px;
+    padding-top: 82px;
+    margin-left: 14px;
+    margin-right: 12px;
+    line-height: 21px;
 }
 
 .reasons-list-food {
-    color: black;
+    background-image: url("../img/icon-food.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: 4px;
     text-align: center;
-    padding-top: 60px;
-    padding-left: 5px;
+    padding-top: 82px;
+    line-height: 21px;
 }
 
 .reasons-list-present {
-    color: black;
+    background-image: url("../img/icon-present.svg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position-y: -1px;
     text-align: center;
-    padding-top: 56px;
+    padding-top: 82px;
+    padding-bottom: 32px;
+    line-height: 21px;
 }
 
 .reasons-list-gray {
-    float: left;
     width: 400px;
-    color: black;
     text-align: center;
     padding: 30px 70px 40px;
 }
 
 .info-area {
     width: 150px;
-    margin-top: 19px;
+    margin-top: 16px;
     margin-bottom: 24px;
     margin-left: 55px;
     line-height: 22px;
 }
 
 .info-road {
-    width: 150px;
-    margin-top: 19px;
-    margin-bottom: 24px;
-    margin-left: 56px;
+    width: 146px;
+    margin-top: 17px;
+    margin-bottom: 25px;
+    margin-left: 58px;
     line-height: 21px;
 }
 
 .info-tourist {
-    width: 150px;
-    margin-top: 18px;
+    width: 153px;
+    margin-top: 17px;
     margin-bottom: 24px;
-    margin-left: 55px;
+    margin-left: 53px;
     line-height: 21px;
 }
 
 .reasons-list-gray-area {
-    width: 255px;
-    padding-top: 8px;
+    width: 259px;
+    padding-top: 7px;
     line-height: 21px;
 }
 
 .reasons-list-gray-road {
-    width: 265px;
+    width: 261px;
     padding-top: 8px;
     line-height: 21px;
 }
 
 .reasons-list-gray-tourist {
-    width: 255px;
-    padding-top: 8px;
+    width: 259px;
+    padding-top: 9px;
     line-height: 21px;
 }
 
 .visit {
+    
     font-size: 21px;
     font-weight: bold;
     color: black;
     text-align: center;
     padding-left: 132px;
     margin-right: 28px;
+    margin-bottom: 24px;
 }
 
 .social-button {
@@ -480,7 +493,7 @@ nav li:nth-child(4) {
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 30px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -649,7 +662,6 @@ nav li:nth-child(4) {
 
 .hotel-name-villas {
     line-height: 1.1;
-    letter-spacing: normal;
 }
 
 .type-hotel {
@@ -823,11 +835,29 @@ nav li:nth-child(4) {
     border: none;
 }
 
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: black;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:black;
+    opacity: 1;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:black;
+    opacity: 1;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+    color: black;
+}
+
 .dates label {
     display: inline-block;
     vertical-align: top;
-    padding-top: 19px;
-    padding-bottom: 9px;
+    padding-top: 21px;
+    padding-bottom: 8px;
     padding-left: 55px;
 }
 
@@ -841,62 +871,63 @@ nav li:nth-child(4) {
     width: 568px;
     height: 86px;
     background-color: #756356;
-    color: white;
+    color: #ffffff;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 21px;
-    font-weight: bold;
-    line-height: 1.2;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
     border: none;
     cursor: pointer;
 }
 
 .checkin {
-    font-family: "PT Sans";
-    color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
     position: relative;
-    margin-left: 22px;
-    width: 316px;
+    margin-left: 20px;
+    width: 324px;
     height: 38px;
     background-color: #f2f3f3;
-    padding: 0 15px;
+    padding: 0 11px;
     border: none;
 }
 
 .checkout {
-    font-family: "PT Sans";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 26px;
     text-transform: uppercase;
     position: relative;
     margin-left: 17px;
-    width: 316px;
+    width: 324px;
     height: 38px;
     background-color: #f2f3f3;
-    color: black;
-    padding: 0 15px;
+    padding: 0 11px;
     border: none;
 }
 
+
 .date-check-in svg {
-	position: absolute;	
-	top: 62px;
-	right: 60px;
-	cursor: pointer;
-	background: none;
-	border: none;
+    position: absolute;	
+    top: 64px;
+    right: 64px;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .date-check-out svg {
-	position: absolute;	
-	top: 128px;
-	right: 60px;
-	cursor: pointer;
-	background: none;
-	border: none;
+    position: absolute;	
+    top: 130px;
+    right: 64px;
+    cursor: pointer;
+    background: none;
+    border: none;
 }
 
 .people-block {
@@ -912,11 +943,12 @@ nav li:nth-child(4) {
 .minus {
     width: 38px;
     height: 38px;  
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #a9a9a9;
-    background-color: #f2f2f2;
+    font-size: 21px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    color: #a9a9a9;
+    background-color: #f2f2f2;	
     margin-left: 21px;
     border: none;
     cursor: pointer;
@@ -924,14 +956,15 @@ nav li:nth-child(4) {
 
 .plus {
     width: 38px;
-	height: 38px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
- 	color: #a9a9a9;
-	background-color: #f2f2f2;
+    height: 38px;
+    font-size: 21px;
+    line-height: 26px;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-weight: bold;
+    color: #a9a9a9;
+    background-color: #f2f2f2;
     border: none;
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .plus:hover,
@@ -963,14 +996,21 @@ nav li:nth-child(4) {
     background-color: #f2f2f2;
     border: none;  
     text-align: center;
+    color: #000000;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
 }
 
 .children {
     margin-left: 51px;
+    padding-right: 5px;
 }
 
 .adults {
-    margin-right: 21px;
+    margin-right: 20px;
 }
 
 .search-button {
@@ -1015,6 +1055,7 @@ nav li:nth-child(4) {
 .dates input:hover,
 .dates input:active {
     background-color: #ececec;
+    color: #000000;
     cursor: pointer;
 }
 
@@ -1036,8 +1077,8 @@ nav li:nth-child(4) {
 }
 
 .map {
-	position: relative;
-	z-index: 1;
+    position: relative;
+    z-index: 1;
     width: 1200px;
     height: 594px;
 } 
@@ -1046,6 +1087,7 @@ nav li:nth-child(4) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-content: center;
     height: 48px;
 }
 
@@ -1124,15 +1166,13 @@ nav li:nth-child(4) {
 }
 
 .site-by-pic {
+    align-content: center;
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    padding-top: 3px;
     padding-right: 101px;
 }
 
 .site-by  {
-    margin-top: 8px;
     margin-right: 5px;
 }
 
@@ -1154,32 +1194,32 @@ nav li:nth-child(4) {
 
  /* Футер для главной */
 
-.container-index {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 1200px;
-    height: 120px;  
-    justify-content: space-between;
-    background: white;
-}
 
 .footer-index {
+    margin-bottom: 6px;
     position: absolute;
     bottom: 0;
     opacity: 0.9;
 }
 
 .social-index {
+    margin-top: 1px;
     display: flex;
     flex-direction: row;
+    align-content: center;
     height: 48px;
 }
 
+.site-by-index {
+    margin-top: 10px;
+    margin-right: 7px;
+    line-height: 21px;
+}
+
 .site-by-pic-index {
+    margin-top: 8px;
     display: flex;
     flex-direction: row;
-    justify-items: center;
-    padding-right: 101px;
+    align-content: center;
 }
 
