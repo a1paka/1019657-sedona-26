@@ -415,7 +415,7 @@ nav li:nth-child(4) {
     content: "";
     position: absolute;
     top: 0;
-    left: -35px;
+    left: -40px;
     width: 27px;
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
@@ -429,12 +429,12 @@ nav li:nth-child(4) {
     background-position: 0 0;
 }
 
-.filter-input-checkbox:focus {
-    box-shadow: black;
+.filter-input-checkbox:focus + label::before{
+    box-shadow: 0 0 0 0.2em gray;
 }
 
-.filter-input-checkbox:checked:focus {
-    box-shadow: black;
+.filter-input-checkbox:checked:focus + label::before {
+    box-shadow: 0 0 0 0.2em gray;
 }
 
 .check-head {
@@ -558,7 +558,7 @@ nav li:nth-child(4) {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    margin-left: 80px;
+    margin-left: 85px;
     padding: 9px 36px;
     color: #ffffff;
     text-transform: uppercase;
@@ -665,24 +665,26 @@ nav li:nth-child(4) {
 }
 
 .hotel-name {
-    margin-top: 25px;
+    margin-top: 22px;
     margin-bottom: -5px;
 }
 
 .hotel-name-villas {
     line-height: 1.1;
+    margin-top: 23px;
+    margin-bottom: -1px;
 }
 
 .type-hotel {
     display: inline-block;
     vertical-align: top;
     min-width: 116px;
-    padding-top: 14px;
+    padding-top: 13px;
     padding-bottom: 12px;
 }
 
 .type-price {
-    padding-top: 14px;
+    padding-top: 13px;
 }
 
 .container {
@@ -724,7 +726,7 @@ nav li:nth-child(4) {
 
 .rating {
     margin: 0;
-    padding: 5px 13px 5px 13px;
+    padding: 4px 14px 4px 14px;
     color: #666;
     text-decoration: none;
     text-align: center;
@@ -743,7 +745,7 @@ nav li:nth-child(4) {
     width: 17px;
     height: 17px;
     margin-left: 5px;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
     background-image: url("../img/star.svg");
     margin-top: 30px;
 }
@@ -943,8 +945,7 @@ nav li:nth-child(4) {
     flex-direction: row;
     align-items: center;
     margin-top: 23px;
-    padding-left: 55px;
-    padding-right: 57px;
+    padding-left: 56px;
     padding-bottom: 54px;
 }
 
@@ -1181,7 +1182,8 @@ nav li:nth-child(4) {
 }
 
 .site-by  {
-    margin-right: 5px;
+    margin-right: 6px;
+    margin-top: 8px;
 }
 
 .academy {
