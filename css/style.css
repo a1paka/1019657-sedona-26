@@ -407,7 +407,6 @@ nav li:nth-child(4) {
     position: relative;
     display: block;
     cursor: pointer;
-    user-select: none;
 }
 
 .checkboxes-type input[type="checkbox"],
@@ -415,26 +414,23 @@ nav li:nth-child(4) {
     display: none;
 }
 
-.filter-input-checkbox + label::before {
+.filter-input-checkbox + label::before,
+.filter-input-checkbox:checked+label::before {
     content: "";
     position: absolute;
     top: 0;
-    left: -42px;
-    width: 23px;
+    left: -35px;
+    width: 27px;
     height: 23px;
     background-image: url("../img/checkbox-off.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
-  
-.filter-input-checkbox:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -42px;
-    width: 27px;
-    height: 26px;
+
+.filter-input-checkbox:checked + label::before {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-position: 0 0;
 }
 
 .check-head {
@@ -603,14 +599,21 @@ nav li:nth-child(4) {
     font-size: 12px;
     line-height: 1.5;
     margin-right: 30px;
+    text-decoration: none;
+    border-bottom: dotted 1px #81b3d2;
 }
 
 .sorting-type {
     margin-top: 34px;
+    max-width: 600px;
 }
 
 .icons {
     margin-top: 36px;
+}
+
+.up {
+    text-decoration: none;
 }
 
 .up:hover path,
@@ -640,11 +643,13 @@ nav li:nth-child(4) {
     color: #81b3d2; 
     text-decoration: none;
     line-height: 1.5;
+    border: none;
 }
 
 .sorting-type a:hover,
 .sorting-type a:focus {
-    border-bottom: dotted 2px #81b3d2;
+    color: #81b3d2;
+    border-bottom: dotted 1px #81b3d2;
     width: 49px;
     line-height: 1.5;
 }
@@ -740,13 +745,12 @@ nav li:nth-child(4) {
 }
 
 .icons {
+    display: flex; 
+    justify-content: space-between;
     text-align: right;
     margin-right: 71px;
     margin-left: auto;
-}
-
-.down {
-    padding-left: 10px;
+    width: 34px;
 }
 
 .stars-rating {
