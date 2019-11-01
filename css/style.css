@@ -14,7 +14,8 @@ img {
     height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden  {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -409,11 +410,6 @@ nav li:nth-child(4) {
     cursor: pointer;
 }
 
-.checkboxes-type input[type="checkbox"],
-.checkboxes-infrastr input[type="checkbox"] {
-    display: none;
-}
-
 .filter-input-checkbox + label::before,
 .filter-input-checkbox:checked+label::before {
     content: "";
@@ -431,6 +427,14 @@ nav li:nth-child(4) {
     background-image: url("../img/checkbox-on.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
+}
+
+.filter-input-checkbox:focus {
+    box-shadow: black;
+}
+
+.filter-input-checkbox:checked:focus {
+    box-shadow: black;
 }
 
 .check-head {
